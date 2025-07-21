@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://db58ctnwsv2jk"]
 
-[ext_resource type="Script" path="res://script/map/TileCursor.cs" id="1_qyudw"]
+[ext_resource type="Script" uid="uid://c37um8v817j3g" path="res://script/map/TileCursor.cs" id="1_qyudw"]
 [ext_resource type="SpriteFrames" uid="uid://blvbr8yu1mdn5" path="res://gfx/2d/sys/map/tileCursor.tres" id="2_vdgrh"]
 
 [node name="TileCursor" type="Node2D"]

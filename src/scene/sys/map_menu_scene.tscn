@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://dyhbiub1hoifg"]
 
-[ext_resource type="Script" path="res://script/sys/map/TileInspector.cs" id="1_kvb8u"]
+[ext_resource type="Script" uid="uid://bmqi2mdnde8b" path="res://script/sys/map/TileInspector.cs" id="1_kvb8u"]
 [ext_resource type="Theme" uid="uid://0rl7m6e6hrfn" path="res://ui/window_default.tres" id="1_s2o1s"]
-[ext_resource type="Script" path="res://script/sys/MenuSystem.cs" id="1_uekyy"]
+[ext_resource type="Script" uid="uid://bp1als2ydyx8v" path="res://script/sys/MenuSystem.cs" id="1_uekyy"]
 [ext_resource type="StyleBox" uid="uid://c2d0q3oq5o1te" path="res://ui/window_defaul.tres" id="2_cabi1"]
-[ext_resource type="Script" path="res://script/sys/map/UnitInspector.cs" id="4_45i3r"]
-[ext_resource type="Script" path="res://script/sys/map/ContextMenu.cs" id="5_3e2lu"]
-[ext_resource type="Script" path="res://script/sys/map/TurnInspector.cs" id="8_3pcbh"]
-[ext_resource type="Script" path="res://script/sys/map/MoveMenu.cs" id="8_pi1pg"]
+[ext_resource type="Script" uid="uid://d3eipccru2tcc" path="res://script/sys/map/UnitInspector.cs" id="4_45i3r"]
+[ext_resource type="Script" uid="uid://bfbuxg35j4sfu" path="res://script/sys/map/ContextMenu.cs" id="5_3e2lu"]
+[ext_resource type="Script" uid="uid://bypqo6wccfcdv" path="res://script/sys/map/TurnInspector.cs" id="8_3pcbh"]
+[ext_resource type="Script" uid="uid://detfooygxlw5h" path="res://script/sys/map/MoveMenu.cs" id="8_pi1pg"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2s6cl"]
 size = Vector2(32, 32)
