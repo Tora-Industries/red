@@ -24,7 +24,7 @@ namespace Red.MapScene
         /// Tilemap reference. Used to grab tile attribute data.
         /// </summary>
         [Export]
-		private TileMap tileMap;
+		private TileMapLayer tileMap;
 		/// <summary>
 		/// Initial BGM for the map. This may be overridden by map scripting.
 		/// </summary>
@@ -89,7 +89,7 @@ namespace Red.MapScene
 
 		private (TileAttribute, TileSubAttribute) _GetTileAttributesSlow(int x, int y)
 		{
-            var dat = tileMap.GetCellTileData(-1, new Vector2I(x, y));
+            var dat = tileMap.GetCellTileData(new Vector2I(x, y));
             int attr = (int)(dat?.GetCustomData(attributeName) ?? 0);
             int subAttr = (int)(dat?.GetCustomData(subAttributeName) ?? 0);
             return ((TileAttribute)attr, (TileSubAttribute)subAttr);
