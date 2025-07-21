@@ -19,3 +19,4 @@ src/data_*/
 src/mono_crash.*.json
 
 src/.vs/
+src/.vs/**
