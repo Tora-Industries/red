@@ -12,7 +12,7 @@ config_version=5
 
 config/name="red"
 run/main_scene="res://scene/map/map_scene.tscn"
-config/features=PackedStringArray("4.2", "C#", "Forward Plus")
+config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
 

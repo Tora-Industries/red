@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://cxitrsqgos1ey"]
 
-[ext_resource type="Script" path="res://script/map/MapSystem.cs" id="1_dx1qd"]
+[ext_resource type="Script" uid="uid://dpmix84i1xmua" path="res://script/map/MapSystem.cs" id="1_dx1qd"]
 [ext_resource type="PackedScene" uid="uid://5mnxyv8xy0ve" path="res://scene/map/test_map.tscn" id="1_oei8b"]
-[ext_resource type="Script" path="res://script/map/InputHandler.cs" id="2_q5xs7"]
+[ext_resource type="Script" uid="uid://bd76hun3na7bb" path="res://script/map/InputHandler.cs" id="2_q5xs7"]
 [ext_resource type="PackedScene" uid="uid://db58ctnwsv2jk" path="res://scene/map/tile_cursor.tscn" id="3_dtpek"]
-[ext_resource type="Script" path="res://script/map/CameraController.cs" id="3_thgeh"]
+[ext_resource type="Script" uid="uid://0ov872ssqisb" path="res://script/map/CameraController.cs" id="3_thgeh"]
 [ext_resource type="PackedScene" uid="uid://dyhbiub1hoifg" path="res://scene/sys/map_menu_scene.tscn" id="6_612os"]
-[ext_resource type="Script" path="res://script/map/TurnManager.cs" id="7_4xfde"]
+[ext_resource type="Script" uid="uid://cbdhun6ei8oge" path="res://script/map/TurnManager.cs" id="7_4xfde"]
 
 [node name="MapScene" type="Node2D"]
 script = ExtResource("1_dx1qd")

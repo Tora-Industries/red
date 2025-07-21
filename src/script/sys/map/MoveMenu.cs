@@ -127,29 +127,29 @@ namespace Red.Sys.MapScene
                     var path = paths.navigablePaths.First;
                     foreach (var tile in paths.attackableTiles)
                     {
-                        Singleton.InstanceOf<MovePreviewLayer>().SetCell(-1, tile, sourceId: 0, atlasCoords: tileUnreachable);
+                        Singleton.InstanceOf<MovePreviewLayer>().SetCell(tile, sourceId: 0, atlasCoords: tileUnreachable);
                     }
                     while (path != null)
                     {
                         for (int i = 0; i < path.Value.Length; i++)
                         {
-                            Singleton.InstanceOf<MovePreviewLayer>().SetCell(-1, path.Value[i], sourceId: 0, atlasCoords: tileReachable);
+                            Singleton.InstanceOf<MovePreviewLayer>().SetCell(path.Value[i], sourceId: 0, atlasCoords: tileReachable);
                         }
                         path = path.Next;
                     }
-                    Singleton.InstanceOf<MovePreviewLayer>().SetCell(-1, unit.Data.LogicalPosition, sourceId: 0, atlasCoords: tileOccupied);
+                    Singleton.InstanceOf<MovePreviewLayer>().SetCell(unit.Data.LogicalPosition, sourceId: 0, atlasCoords: tileOccupied);
                     break;
                 case Mode.Target:
                     Trace.Assert(flags != TargetFlags.None, "Shouldn't be opening MoveMenu for targeting w/o specifying target flags");
                     var targetingInfo = unit.GetTargetsForItem(wpn);
                     for (int i = 0; i < targetingInfo.Item1.Count; i++)
                     {
-                        if (flags == TargetFlags.Enemy) Singleton.InstanceOf<MovePreviewLayer>().SetCell(-1, targetingInfo.Item1[i].Data.LogicalPosition, sourceId: 0, atlasCoords: tileUnreachable);
-                        else Singleton.InstanceOf<MovePreviewLayer>().SetCell(-1, targetingInfo.Item1[i].Data.LogicalPosition, sourceId: 0, atlasCoords: tileOccupied);
+                        if (flags == TargetFlags.Enemy) Singleton.InstanceOf<MovePreviewLayer>().SetCell(targetingInfo.Item1[i].Data.LogicalPosition, sourceId: 0, atlasCoords: tileUnreachable);
+                        else Singleton.InstanceOf<MovePreviewLayer>().SetCell(targetingInfo.Item1[i].Data.LogicalPosition, sourceId: 0, atlasCoords: tileOccupied);
                     }
                     for (int i = 0; i < targetingInfo.Item2.Count; i++)
                     {
-                        Singleton.InstanceOf<MovePreviewLayer>().SetCell(-1, targetingInfo.Item2[i], sourceId: 0, atlasCoords: tileReachable);
+                        Singleton.InstanceOf<MovePreviewLayer>().SetCell(targetingInfo.Item2[i], sourceId: 0, atlasCoords: tileReachable);
                     }
                     break;
                 default:

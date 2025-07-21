@@ -3,7 +3,7 @@
 namespace Red.MapScene
 {
     [GlobalClass]
-    public partial class MovePreviewLayer : TileMap, ISingleton<MovePreviewLayer>
+    public partial class MovePreviewLayer : TileMapLayer, ISingleton<MovePreviewLayer>
     {
         public override void _Ready()
         {
